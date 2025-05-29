@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maaf Ya Sayang</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffdde1, #ee9ca7);
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+      text-align: center;
+      max-width: 400px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      color: #ff6b81;
+      font-size: 28px;
+    }
+
+    p {
+      color: #444;
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    button {
+      background: #ff6b81;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #e55065;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px);}
+      to { opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Maaf ya sayang 🥺</h1>
+    <p>Aku tahu aku salah dan udah bikin kamu marah...<br>
+    Tapi sungguh, aku nggak mau kehilangan kamu.<br>
+    Maafkan aku ya, aku janji bakal lebih baik lagi. 💗</p>
+    <button onclick="showLove()">Peluk aku 💞</button>
+    <p id="response"></p>
+  </div>
+
+  <script>
+    function showLove() {
+      document.getElementById('response').innerText = "🤗🤍 Peluk sayang... jangan marah lagi yaa~";
+    }
+  </script>
+</body>
+</html>
